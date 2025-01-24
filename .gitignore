@@ -171,3 +171,8 @@ cython_debug/
 .pypirc
 
 data/raw/*
+*.h5
+*.pkl
+*.keras
+*.xml
+*.iml
