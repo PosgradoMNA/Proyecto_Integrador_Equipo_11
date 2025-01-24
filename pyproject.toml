@@ -2,7 +2,11 @@
 name = "proyecto-integrador-equipo-11"
 version = "0.1.0"
 description = ""
-authors = ["Moises Diaz <moisesdiazmalagon@gmail.com>"]
+authors = [
+    "Moises Diaz <moisesdiazmalagon@gmail.com>",
+    "Armando Bringas <armando.bringas@gmail.com>",
+]
+
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -15,9 +19,8 @@ ipykernel = "^6.29.5"
 xlrd = ">=2.0.1"
 pyarrow = "^19.0.0"
 fastparquet = "^2024.11.0"
-
+jupyter = "^1.1.1"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-requires-python = "^3.10"
