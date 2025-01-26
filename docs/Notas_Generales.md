@@ -14,11 +14,11 @@
 - [x] Describir los datos numéricos
 - [x] (Moi) Justificar que vamos a quitar las tareas misclassified (aquellas que tienen valor 0), ya que no son relevantes y fueron pocas las que se eliminaron. 
 - [x] Describir los histogramas (la curtosis, sesgo, etc.)
-- [ ] Análisis de outliers en box plot
-- [ ] (Moisés) Gráfica de Series de Tiempo (Conti)
+- [x] Análisis de outliers en box plot
+- [x] (Moisés) Gráfica de Series de Tiempo (Conti)
 - [ ] (Armi) Verificar que el notebook está corriendo bien de arriba a abajo
-- [ ] Agregar análisis de correlación, hay que explicar que no tiene sentido hacer para series de tiempo
-- [ ] En lugar de hacer pairplots 
+- [x] Agregar análisis de correlación, hay que explicar que no tiene sentido hacer para series de tiempo
+- [ ] En lugar de hacer pairplots hacer gráficas acorde al análisis de Series de Tiempo
 
 ## Papers
 
