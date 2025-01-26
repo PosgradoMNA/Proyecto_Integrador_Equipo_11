@@ -23,6 +23,7 @@ jupyter = "^1.1.1"
 pywavelets = "^1.8.0"
 statsmodels = "^0.14.4"
 plotly = "^5.24.1"
+scikit-learn = "^1.6.1"
 
 [build-system]
 requires = ["poetry-core"]
