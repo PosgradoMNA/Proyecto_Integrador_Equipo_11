@@ -8,10 +8,11 @@
 - [Archivos y código de referencia con respecto al clasificador de emociones](https://drive.google.com/drive/u/1/folders/1QeE3B8Rt5N68If2umk0SSwnRU3F2POcS)
 
 ## *TODO* List - EDA y Preprocesamiento (ExploratoryDataAnalysis.ip)
-- [ ] Mostrar gráfico de cada tarea
-- [ ] Agregar las citas de los papers
-- [ ] Describir los datos numéricos
-- [ ] (Armi) Justificar que vamos a quitar las tareas misclassified (aquellas que tienen valor 0), ya que no son relevantes y fueron pocas las que se eliminaron. 
+- [x] Descripción de las librerías
+- [x] Mostrar gráfico de cada tarea
+- [x] Agregar las citas de los papers
+- [x] Describir los datos numéricos
+- [x] (Moi) Justificar que vamos a quitar las tareas misclassified (aquellas que tienen valor 0), ya que no son relevantes y fueron pocas las que se eliminaron. 
 - [ ] Describir los histogramas (la curtosis, sesgo, etc.)
 - [ ] Análisis de outliers en box plot
 - [ ] (Moisés) Gráfica de Series de Tiempo (Conti)
