@@ -13,7 +13,7 @@
 - [x] Agregar las citas de los papers
 - [x] Describir los datos numéricos
 - [x] (Moi) Justificar que vamos a quitar las tareas misclassified (aquellas que tienen valor 0), ya que no son relevantes y fueron pocas las que se eliminaron. 
-- [ ] Describir los histogramas (la curtosis, sesgo, etc.)
+- [x] Describir los histogramas (la curtosis, sesgo, etc.)
 - [ ] Análisis de outliers en box plot
 - [ ] (Moisés) Gráfica de Series de Tiempo (Conti)
 - [ ] (Armi) Verificar que el notebook está corriendo bien de arriba a abajo
