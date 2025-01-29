@@ -19,14 +19,18 @@
 - [x] (Armi) - Tentativamente Verificar que el notebook está corriendo bien de arriba a abajo
 - [x] Agregar análisis de correlación, hay que explicar que no tiene sentido hacer para series de tiempo
 - [x] En lugar de hacer pairplots hacer gráficas acorde al análisis de Series de Tiempo
-- [ ] (Armi) Poner que no hay alta cardinalidad
-- [ ] (Moi) Normalización de series de tiempo con Z-score
+- [x] (Armi) Poner que no hay alta cardinalidad
+- [x] (Moi) Normalización de series de tiempo con Z-score
+- [x] (Moi) Preprocesamiento de las series de tiempo con transformada wavelet
+- [x] (Armi) Verificar conclusiones
+- [x] (Armi) Hacer TODO de los countplots
+- [x] (Armi) Verificar todo el notebook y mandarlo
+
+TBD
+
 - [ ] (Moi) Filtrado de datos con rolling average
 - [ ] (Moi) Preprocesamiento de las categóricas con baja cardinalidad
-- [ ] (Moi) Preprocesamiento de las series de tiempo con transformada wavelet
-- [ ] (Armi) Verificar conclusiones
-- [ ] (Armi) Hacer TODO de los countplots
-- [ ] (Armi) Verificar todo el notebook y mandarlo
+ 
 
 ## Papers
 
