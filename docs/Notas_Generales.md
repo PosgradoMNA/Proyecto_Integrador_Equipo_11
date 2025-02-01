@@ -19,14 +19,32 @@
 - [x] (Armi) - Tentativamente Verificar que el notebook está corriendo bien de arriba a abajo
 - [x] Agregar análisis de correlación, hay que explicar que no tiene sentido hacer para series de tiempo
 - [x] En lugar de hacer pairplots hacer gráficas acorde al análisis de Series de Tiempo
-- [ ] (Armi) Poner que no hay alta cardinalidad
-- [ ] (Moi) Normalización de series de tiempo con Z-score
-- [ ] (Moi) Filtrado de datos con rolling average
-- [ ] (Moi) Preprocesamiento de las categóricas con baja cardinalidad
-- [ ] (Moi) Preprocesamiento de las series de tiempo con transformada wavelet
-- [ ] (Armi) Verificar conclusiones
-- [ ] (Armi) Hacer TODO de los countplots
-- [ ] (Armi) Verificar todo el notebook y mandarlo
+- [x] (Armi) Poner que no hay alta cardinalidad
+- [x] (Moi) Normalización de series de tiempo con Z-score
+- [x] (Moi) Preprocesamiento de las series de tiempo con transformada wavelet
+- [x] (Armi) Verificar conclusiones
+- [x] (Armi) Hacer TODO de los countplots
+- [x] (Armi) Verificar todo el notebook y mandarlo
+
+
+## *TODO* List Feature Engineering (FeatureEngineering.ipynb)
+Utilizar el archivo de los 
+
+Ejemplo completo Comp5.ipynb: https://drive.google.com/drive/u/1/folders/1Pk6bdaYj-2OnmJv__9ofeuhX4oTN9dst
+
+
+PCA y LLE: https://drive.google.com/drive/u/1/folders/1Nvj5ms6Ev0FADbYVArk6dbMrlLvIGhJy
+
+- [ ] Agregar Wavelet
+- [ ] Augmented data
+- [ ] Shuffle
+- [ ] Normalization
+- [ ] LLE
+- [ ] PCA
+- [ ] Gráficos de cómo se reduce la dimensionalidad
+- [ ] Explicar y justificar las técnicas utilizadas
+- [ ] Conclusiones de fase de ¨Preparación de Datos¨ en contexto CRISP-ML
+ 
 
 ## Papers
 
