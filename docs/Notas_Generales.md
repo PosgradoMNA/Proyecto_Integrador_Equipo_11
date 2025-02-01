@@ -26,10 +26,24 @@
 - [x] (Armi) Hacer TODO de los countplots
 - [x] (Armi) Verificar todo el notebook y mandarlo
 
-TBD
 
-- [ ] (Moi) Filtrado de datos con rolling average
-- [ ] (Moi) Preprocesamiento de las categóricas con baja cardinalidad
+## *TODO* List Feature Engineering (FeatureEngineering.ipynb)
+Utilizar el archivo de los 
+
+Ejemplo completo Comp5.ipynb: https://drive.google.com/drive/u/1/folders/1Pk6bdaYj-2OnmJv__9ofeuhX4oTN9dst
+
+
+PCA y LLE: https://drive.google.com/drive/u/1/folders/1Nvj5ms6Ev0FADbYVArk6dbMrlLvIGhJy
+
+- [ ] Agregar Wavelet
+- [ ] Augmented data
+- [ ] Shuffle
+- [ ] Normalization
+- [ ] LLE
+- [ ] PCA
+- [ ] Gráficos de cómo se reduce la dimensionalidad
+- 
+
  
 
 ## Papers
