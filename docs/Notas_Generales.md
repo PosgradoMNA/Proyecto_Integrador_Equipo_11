@@ -42,8 +42,8 @@ PCA y LLE: https://drive.google.com/drive/u/1/folders/1Nvj5ms6Ev0FADbYVArk6dbMrl
 - [ ] LLE
 - [ ] PCA
 - [ ] Gráficos de cómo se reduce la dimensionalidad
-- 
-
+- [ ] Explicar y justificar las técnicas utilizadas
+- [ ] Conclusiones de fase de ¨Preparación de Datos¨ en contexto CRISP-ML
  
 
 ## Papers
