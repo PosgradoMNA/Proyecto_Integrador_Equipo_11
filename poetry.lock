@@ -658,6 +658,22 @@ docs = ["ipython", "matplotlib", "numpydoc", "sphinx"]
 tests = ["pytest", "pytest-cov", "pytest-xdist"]
 
 [[package]]
+name = "daal"
+version = "2025.1.0"
+description = "Intel® oneAPI Data Analytics Library"
+optional = false
+python-versions = "*"
+groups = ["main"]
+markers = "python_version <= \"3.11\" or python_version >= \"3.12\""
+files = [
+    {file = "daal-2025.1.0-py2.py3-none-manylinux_2_28_x86_64.whl", hash = "sha256:2e8288d3dbcfe40aef6f4a5fbab319e1805390b89a745a22f67785ed373ec35c"},
+    {file = "daal-2025.1.0-py2.py3-none-win_amd64.whl", hash = "sha256:9848ddeb76efe768d72bbd84a842a27360c6fdfaf2c8cae82ed6bef650c96c0a"},
+]
+
+[package.dependencies]
+tbb = "==2022.*"
+
+[[package]]
 name = "debugpy"
 version = "1.8.12"
 description = "An implementation of the Debug Adapter Protocol for Python"
@@ -3184,6 +3200,30 @@ maintenance = ["conda-lock (==2.5.6)"]
 tests = ["black (>=24.3.0)", "matplotlib (>=3.3.4)", "mypy (>=1.9)", "numpydoc (>=1.2.0)", "pandas (>=1.1.5)", "polars (>=0.20.30)", "pooch (>=1.6.0)", "pyamg (>=4.0.0)", "pyarrow (>=12.0.0)", "pytest (>=7.1.2)", "pytest-cov (>=2.9.0)", "ruff (>=0.5.1)", "scikit-image (>=0.17.2)"]
 
 [[package]]
+name = "scikit-learn-intelex"
+version = "2025.1.0"
+description = "Intel(R) Extension for Scikit-learn is a seamless way to speed up your Scikit-learn application."
+optional = false
+python-versions = ">=3.7"
+groups = ["main"]
+markers = "python_version <= \"3.11\" or python_version >= \"3.12\""
+files = [
+    {file = "scikit_learn_intelex-2025.1.0-py310-none-manylinux_2_28_x86_64.whl", hash = "sha256:a0ab12046b990e2d0b35e0eb469cd40792fb8e61131ab817f838d640981c05a2"},
+    {file = "scikit_learn_intelex-2025.1.0-py310-none-win_amd64.whl", hash = "sha256:0947fdc01ca445a04b64d0c85eb8ff23b9c40ec4cfe1bf3db25197436a94a9ca"},
+    {file = "scikit_learn_intelex-2025.1.0-py311-none-manylinux_2_28_x86_64.whl", hash = "sha256:e15f15345e7bbd9aba02360d16dfb66993d41c9d43c2435ab655f6b5effbe163"},
+    {file = "scikit_learn_intelex-2025.1.0-py311-none-win_amd64.whl", hash = "sha256:67ac25fb9e37651d585bf10567c9d1304521591bcb2817caaec7ac1095cb8bda"},
+    {file = "scikit_learn_intelex-2025.1.0-py312-none-manylinux_2_28_x86_64.whl", hash = "sha256:c1fdbd5262f079a0842debb999868fb7d6aebcd9df38a6dc5657e65f251e2fab"},
+    {file = "scikit_learn_intelex-2025.1.0-py312-none-win_amd64.whl", hash = "sha256:d5c3cb464eff6513dc80abf415bba65baf0c9612dca4eb2c13efcd8ae377b497"},
+    {file = "scikit_learn_intelex-2025.1.0-py39-none-manylinux_2_28_x86_64.whl", hash = "sha256:d9e9ea3bb559900a0a80e96ee47ccd183ec93012415a3771b934444d1528cf64"},
+    {file = "scikit_learn_intelex-2025.1.0-py39-none-win_amd64.whl", hash = "sha256:e27a772902a0f6ea0b240e007420dbe1a711f49b1adfc33c26244190fd2e9591"},
+]
+
+[package.dependencies]
+daal = "2025.1.0"
+numpy = ">=1.19"
+scikit-learn = ">=0.22"
+
+[[package]]
 name = "scipy"
 version = "1.15.1"
 description = "Fundamental algorithms for scientific computing in Python"
@@ -3439,6 +3479,35 @@ scipy = ">=1.8,<1.9.2 || >1.9.2"
 build = ["cython (>=3.0.10)"]
 develop = ["colorama", "cython (>=3.0.10)", "cython (>=3.0.10,<4)", "flake8", "isort", "joblib", "matplotlib (>=3)", "pytest (>=7.3.0,<8)", "pytest-cov", "pytest-randomly", "pytest-xdist", "pywinpty", "setuptools-scm[toml] (>=8.0,<9.0)"]
 docs = ["ipykernel", "jupyter-client", "matplotlib", "nbconvert", "nbformat", "numpydoc", "pandas-datareader", "sphinx"]
+
+[[package]]
+name = "tbb"
+version = "2022.0.0"
+description = "Intel® oneAPI Threading Building Blocks (oneTBB)"
+optional = false
+python-versions = "*"
+groups = ["main"]
+markers = "python_version <= \"3.11\" or python_version >= \"3.12\""
+files = [
+    {file = "tbb-2022.0.0-py2.py3-none-manylinux_2_28_x86_64.whl", hash = "sha256:15a15a4e3ea4c3f3198bdb3c55fac75c589e15ed2ad0bbb080900d355c5b017e"},
+    {file = "tbb-2022.0.0-py3-none-win_amd64.whl", hash = "sha256:6a0bae732599ec5c082f46e4aaf14bdbef1621e8cd0c6fcf64d50d347c2ebda4"},
+]
+
+[package.dependencies]
+tcmlib = "==1.*"
+
+[[package]]
+name = "tcmlib"
+version = "1.2.0"
+description = "Thread Composability Manager"
+optional = false
+python-versions = "*"
+groups = ["main"]
+markers = "python_version <= \"3.11\" or python_version >= \"3.12\""
+files = [
+    {file = "tcmlib-1.2.0-py2.py3-none-manylinux_2_28_x86_64.whl", hash = "sha256:dee9a0665ffa0a74f0ec72844ef7d82e9178ebf6980a76ac65906303d5ed4d03"},
+    {file = "tcmlib-1.2.0-py2.py3-none-win_amd64.whl", hash = "sha256:f751e005fd815ed0efeb87d4523f6a0938c5671e59ac935614f42d8ebb6489c9"},
+]
 
 [[package]]
 name = "tenacity"
@@ -3792,4 +3861,4 @@ test = ["pytest", "pytest-cov"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "86ee6eb865545f732d038279640e835a0f68bfa3a332b17f2b6156648eb28e6d"
+content-hash = "5fe08fb6d883669bd3c0343f1337307c9851998e533f4677b5f13308b7d2b3ca"
