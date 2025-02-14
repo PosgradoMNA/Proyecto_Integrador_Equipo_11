@@ -1,3 +1,7 @@
+import pandas as pd
+import numpy as np
+from sklearn.metrics import classification_report, roc_auc_score
+
 def load_data():
     """
     Carga los datos preprocesados del análisis exploratorio
