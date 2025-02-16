@@ -1,6 +1,7 @@
 import pandas as pd
-import numpy as np
-from sklearn.metrics import classification_report, roc_auc_score
+from sklearn.metrics import (classification_report, roc_auc_score, precision_recall_curve,
+                             auc, roc_curve, det_curve)
+
 
 def load_data():
     """
@@ -33,8 +34,15 @@ def load_data():
     return all_features_train, y_train, all_features_val, y_val, X_test, y_test
 
 
-
-def print_classification_report(y_true, y_pred, label="Depression"):
+def print_classification_report(y_true, y_pred, y_prob, label=""):
     print(f"{label} Classification Report:")
     print(classification_report(y_true, y_pred, zero_division=0))
-    print(f"{label} ROC AUC: {roc_auc_score(y_true, y_pred):.4f}")
+
+    roc_auc = roc_auc_score(y_true, y_prob)
+    print(f"{label} ROC AUC: {roc_auc:.4f}")
+
+    precision, recall, _ = precision_recall_curve(y_true, y_prob)
+    pr_auc = auc(recall, precision)
+    print(f"{label} Precision-Recall AUC: {pr_auc:.4f}")
+
+
