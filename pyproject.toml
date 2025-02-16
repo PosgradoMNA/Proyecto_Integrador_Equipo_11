@@ -29,6 +29,8 @@ xgboost = "^2.1.4"
 lightgbm = "^4.5.0"
 scikit-learn-intelex = {version = "^2025.1.0", platform = "win32"}
 torch = "^2.6.0"
+graphviz = "^0.20.3"
+torchview = "^0.2.6"
 
 [build-system]
 requires = ["poetry-core"]
