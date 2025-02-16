@@ -47,15 +47,15 @@ def print_classification_report(y_true, y_pred, y_prob, label=""):
     print(f"{label} Precision-Recall AUC: {pr_auc:.4f}")
 
 
-def plot_roc_det_curve(model_name, y_val, y_pred_proba, label_name):
+def plot_roc_det_curve(model_name, y_val, y_pred):
   plt.figure(figsize=(28, 14))
   palette = sns.color_palette("husl")
 
-  fpr, tpr, _ = roc_curve(y_val[label_name], y_pred_proba)
-  fpr_det, fnr_det, _ = det_curve(y_val[label_name], y_pred_proba)
+  fpr, tpr, _ = roc_curve(y_val, y_pred)
+  fpr_det, fnr_det, _ = det_curve(y_val, y_pred)
 
   plt.subplot(1, 2, 1)
-  sns.lineplot(x=fpr, y=tpr, label=f"{model_name} (AUC = {roc_auc_score(y_val[label_name], y_pred_proba):.2f})",
+  sns.lineplot(x=fpr, y=tpr, label=f"{model_name} (AUC = {roc_auc_score(y_val, y_pred):.2f})",
                   color=palette[0])
 
   plt.subplot(1, 2, 2)
@@ -76,3 +76,34 @@ def plot_roc_det_curve(model_name, y_val, y_pred_proba, label_name):
 
   plt.tight_layout()
   plt.show()
+
+
+# def plot_roc_det_curve(model_name, y_val, y_pred_proba, label_name):
+#   plt.figure(figsize=(28, 14))
+#   palette = sns.color_palette("husl")
+
+#   fpr, tpr, _ = roc_curve(y_val[label_name], y_pred_proba)
+#   fpr_det, fnr_det, _ = det_curve(y_val[label_name], y_pred_proba)
+
+#   plt.subplot(1, 2, 1)
+#   sns.lineplot(x=fpr, y=tpr, label=f"{model_name} (AUC = {roc_auc_score(y_val[label_name], y_pred_proba):.2f})",
+#                   color=palette[0])
+
+#   plt.subplot(1, 2, 2)
+#   sns.lineplot(x=fpr_det, y=fnr_det, label=model_name, color=palette[0])
+
+#   plt.subplot(1, 2, 1)
+#   plt.plot([0, 1], [0, 1], linestyle="--", color="gray", alpha=0.7)
+#   plt.xlabel("False Positive Rate")
+#   plt.ylabel("True Positive Rate")
+#   plt.title("ROC Curve Comparison")
+#   plt.legend()
+
+#   plt.subplot(1, 2, 2)
+#   plt.xlabel("False Positive Rate")
+#   plt.ylabel("False Negative Rate")
+#   plt.title("DET Curve Comparison")
+#   plt.legend()
+
+#   plt.tight_layout()
+#   plt.show()
