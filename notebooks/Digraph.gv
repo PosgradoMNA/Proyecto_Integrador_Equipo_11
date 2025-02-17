@@ -1,0 +1,17 @@
+digraph {
+	graph [rankdir=TB]
+	Input [label="Input (Batch, Seq_len, Input_size)" fillcolor=lightblue shape=parallelogram style=filled]
+	LSTM_1 [label="LSTM Layer 1
+(Hidden=128)" fillcolor=lightgray shape=box style=filled]
+	Input -> LSTM_1
+	LSTM_2 [label="LSTM Layer 2
+(Hidden=128)" fillcolor=lightgray shape=box style=filled]
+	LSTM_1 -> LSTM_2
+	BatchNorm [label="BatchNorm (Hidden Size)" fillcolor=gold shape=ellipse style=filled]
+	LSTM_2 -> BatchNorm
+	FC [label="Fully Connected Layer" fillcolor=lightgreen shape=box style=filled]
+	BatchNorm -> FC
+	Sigmoid [label="Sigmoid Activation
+(Output: Binary)" fillcolor=pink shape=ellipse style=filled]
+	FC -> Sigmoid
+}
